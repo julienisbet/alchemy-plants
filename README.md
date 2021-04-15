@@ -36,6 +36,7 @@ Sample Plant Object:
    * Add plant to local storage with defaults for waterLevel
 
 ### Backlog
+Note: These are simply in a list form right now, but you may want to create Github issues for more detailed tracking.
 #### Seed Data
 - [ ] Create and export an array of plant objects to be loaded into local storage when the page loads -- save as plants
 - [ ] Write a function called `loadData` that first checks if there is any data in local storage -- if there is data, do nothing, if there's no data, load the seed data
