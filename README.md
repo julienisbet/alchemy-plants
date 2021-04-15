@@ -32,7 +32,7 @@ Sample Plant Object:
    * Check if there are any plants in local storage, if not, load the seed data
 2. On click -- "Add New Plant" -- can just be a normal link to `/add`
 3. On click -- "Remove plant"
-3. On submit -- plant form
+3. On submit -- Plant Form
    * Add plant to local storage with defaults for waterLevel
 
 ### Backlog
@@ -41,10 +41,19 @@ Sample Plant Object:
 - [ ] Write a function called `loadData` that first checks if there is any data in local storage -- if there is data, do nothing, if there's no data, load the seed data
 
 ### Home Page
-- [ ] Loop through each plant in local storage and display the plant information
-- [ ] Write a function for the "Water Plant" event listener -- accepts an ID as input and will increment the waterLevel for the associated ID
+- [ ] Loop through each plant in local storage and display the plant information (do not worry about wiring up the click events -- just focus on the display)
+- [ ] Write a function for the "Water Plant" event listener
+   * accepts an ID as input
+   * increments the waterLevel for the associated ID
+   * updates the lastWatered date with the current timestamp
 - [ ] Write a function for the "Remove" event listenter -- accepts an ID as input and removes the associated plant from local storage
+- [ ] Wire up the event listeners
 
 ### Add New
-- [ ] Create the HTML form including inputs for plant name and image url
+- [ ] Create the HTML form including inputs for plant name and image url and a submit button
 - [ ] Create a function for the submit event listener that gets the information from the form and adds a new plant
+- [ ] Wire up the submit button to call the function to add the plant and then redirect back to the homepage
+
+### Bonus Features
+- [ ] Display if the plant is over or under watered -- over watered is if its over the maxWaterLevel, under watered is if the level is below 2
+- [ ] Allow users to edit plants (update their name or image URL)
