@@ -40,20 +40,28 @@ Note: These are simply in a list form right now, but you may want to create Gith
 #### Seed Data
 - [ ] Create and export an array of plant objects to be loaded into local storage when the page loads -- save as plants
 - [ ] Write a function called `loadData` that first checks if there is any data in local storage -- if there is data, do nothing, if there's no data, load the seed data
+- [ ] local storage key will be `PLANTS`
 
 ### Home Page
 - [ ] Loop through each plant in local storage and display the plant information (do not worry about wiring up the click events -- just focus on the display)
 - [ ] Write a function for the "Water Plant" event listener
-   * accepts an ID as input
+   * function name: `waterPlant`
+   * accepts an ID as parameter
    * increments the waterLevel for the associated ID
    * updates the lastWatered date with the current timestamp
-- [ ] Write a function for the "Remove" event listenter -- accepts an ID as input and removes the associated plant from local storage
+- [ ] Write a function for the "Remove" event listenter
+   * function name: `removePlant`
+   * accepts an ID as parameter
+   * removes the associated plant from local storage
 - [ ] Wire up the event listeners
 
 ### Add New
 - [ ] Create the HTML form including inputs for plant name and image url and a submit button
-- [ ] Create a function for the submit event listener that gets the information from the form and adds a new plant
-- [ ] Wire up the submit button to call the function to add the plant and then redirect back to the homepage
+- [ ] Create a function for the submit event listener
+   * functionName: `addNewPlant`
+   * retrieves the user input from the form
+   * adds a new plant to local storage
+- [ ] Wire up the submit button to call `addNewPlant` and then redirect back to the homepage
 
 ### Bonus Features
 - [ ] Display if the plant is over or under watered -- over watered is if its over the maxWaterLevel, under watered is if the level is below 2
